@@ -1,0 +1,45 @@
+\hypertarget{class_string_cell}{}\doxysection{String\+Cell Class Reference}
+\label{class_string_cell}\index{StringCell@{StringCell}}
+
+
+Class holding cells with string values.  
+
+
+
+
+{\ttfamily \#include $<$String\+Cell.\+h$>$}
+
+Inheritance diagram for String\+Cell\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_string_cell}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_string_cell_a6108f0459bf93e6f9064f932aec57843}\label{class_string_cell_a6108f0459bf93e6f9064f932aec57843}} 
+\mbox{\hyperlink{class_string_cell_a6108f0459bf93e6f9064f932aec57843}{String\+Cell}} (const std\+::string \&value, size\+\_\+t \mbox{\hyperlink{class_cell_a7b69cb47ed11931a61b71c080983c69a}{length}})
+\begin{DoxyCompactList}\small\item\em checks if the string contains a valid number \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_string_cell_add7ab55fd7e142e1892c2cb52924d923}\label{class_string_cell_add7ab55fd7e142e1892c2cb52924d923}} 
+void \mbox{\hyperlink{class_string_cell_add7ab55fd7e142e1892c2cb52924d923}{print}} (std\+::ostream \&out=std\+::cout) const override
+\begin{DoxyCompactList}\small\item\em Prints on the console. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_string_cell_a0ed448b207ea10f1ffb1e99a34b5170c}\label{class_string_cell_a0ed448b207ea10f1ffb1e99a34b5170c}} 
+void \mbox{\hyperlink{class_string_cell_a0ed448b207ea10f1ffb1e99a34b5170c}{save}} (std\+::ostream \&out) const override
+\begin{DoxyCompactList}\small\item\em Saves in file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_string_cell_a6927eca4a7b1d1900196817bc79c12e4}\label{class_string_cell_a6927eca4a7b1d1900196817bc79c12e4}} 
+double \mbox{\hyperlink{class_string_cell_a6927eca4a7b1d1900196817bc79c12e4}{get\+Value}} () const override
+\begin{DoxyCompactList}\small\item\em Returns a double number, the value of the cell. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_string_cell_afdb164b11b378d4fd2c511b81aaf2325}\label{class_string_cell_afdb164b11b378d4fd2c511b81aaf2325}} 
+\mbox{\hyperlink{class_cell}{Cell}} $\ast$ \mbox{\hyperlink{class_string_cell_afdb164b11b378d4fd2c511b81aaf2325}{clone}} (std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{class_cell}{Cell}} $\ast$ $>$$>$ \&table) override
+\begin{DoxyCompactList}\small\item\em Converts string into a double, if it is not possible, returns 0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class holding cells with string values. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+String\+Cell.\+h\item 
+String\+Cell.\+cpp\end{DoxyCompactItemize}

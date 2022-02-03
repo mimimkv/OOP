@@ -1,0 +1,53 @@
+\hypertarget{class_cell}{}\doxysection{Cell Class Reference}
+\label{class_cell}\index{Cell@{Cell}}
+
+
+abstract class for different types of cells  
+
+
+
+
+{\ttfamily \#include $<$Cell.\+h$>$}
+
+Inheritance diagram for Cell\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cell}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_cell_a2f26c0ca65112f975c5fadc6454b9177}\label{class_cell_a2f26c0ca65112f975c5fadc6454b9177}} 
+{\bfseries Cell} (size\+\_\+t \mbox{\hyperlink{class_cell_a7b69cb47ed11931a61b71c080983c69a}{length}})
+\item 
+\mbox{\Hypertarget{class_cell_ae763b0721263b6320c7194552c061d29}\label{class_cell_ae763b0721263b6320c7194552c061d29}} 
+virtual void \mbox{\hyperlink{class_cell_ae763b0721263b6320c7194552c061d29}{print}} (std\+::ostream \&out) const =0
+\begin{DoxyCompactList}\small\item\em Prints on the console. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cell_ac169c47e7e0414fcbc415d7619f23b54}\label{class_cell_ac169c47e7e0414fcbc415d7619f23b54}} 
+virtual void \mbox{\hyperlink{class_cell_ac169c47e7e0414fcbc415d7619f23b54}{save}} (std\+::ostream \&file) const =0
+\begin{DoxyCompactList}\small\item\em Saves in file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cell_afe42659decbb21c33971fc5147d11dd8}\label{class_cell_afe42659decbb21c33971fc5147d11dd8}} 
+virtual double \mbox{\hyperlink{class_cell_afe42659decbb21c33971fc5147d11dd8}{get\+Value}} () const =0
+\begin{DoxyCompactList}\small\item\em Returns a double number, the value of the cell. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cell_a09a2a3c264530273fe2a2c0c17d23f99}\label{class_cell_a09a2a3c264530273fe2a2c0c17d23f99}} 
+virtual \mbox{\hyperlink{class_cell}{Cell}} $\ast$ \mbox{\hyperlink{class_cell_a09a2a3c264530273fe2a2c0c17d23f99}{clone}} (std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{class_cell}{Cell}} $\ast$ $>$$>$ \&table)=0
+\begin{DoxyCompactList}\small\item\em Clones object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cell_a0bcc0161b71abd8fb37ba4690b931857}\label{class_cell_a0bcc0161b71abd8fb37ba4690b931857}} 
+size\+\_\+t {\bfseries get\+Length} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_cell_a7b69cb47ed11931a61b71c080983c69a}\label{class_cell_a7b69cb47ed11931a61b71c080983c69a}} 
+size\+\_\+t \mbox{\hyperlink{class_cell_a7b69cb47ed11931a61b71c080983c69a}{length}}
+\begin{DoxyCompactList}\small\item\em Amount of characters needed to print, basically the number of chars, Used for alignment when printing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+abstract class for different types of cells 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Cell.\+h\item 
+Cell.\+cpp\end{DoxyCompactItemize}
